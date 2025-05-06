@@ -50,5 +50,45 @@ html, body {
     padding: 10px;
     font-size: 36px;
   }
+
+  .gallery-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .photo {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .arrow {
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #ccc;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .arrow:hover {
+    color: white;
+  }
+  .left-arrow {
+    left: -40px;
+  }
+  .right-arrow {
+    right: -40px;
+  }
   
+.caption {
+    align-items: center;
+    justify-self: center;
+    padding: 0;
+}
   
