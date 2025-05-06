@@ -28,8 +28,23 @@
       </div>
 
       <div class="header">
-        <div><h1>Scooter Lab</h1></div>
-        <div><h1>Servis a tuning skútrů</h1></div>
+        <div><h1>Objednejte se</h1></div>
       </div>
+
+      <form class="form-container">
+        <input type="text" placeholder="Jméno:" required>
+        <input type="text" placeholder="Příjmení:" required>
+        <input type="tel" placeholder="Telefon:" required>
+        <input type="email" placeholder="E-Mail:" required>
+        <input type="text" placeholder="Název skútru:" required>
+        <select required>
+          <option value="" disabled selected>Vyberete službu</option>
+          <option value="servis">Servis Season</option>
+          <option value="diagnostika">Servis Standart</option>
+          <option value="úpravy">Tuning</option>
+        </select>
+        <button type="submit">Odeslat</button>
+      </form>
+
   </body>
 </html>
