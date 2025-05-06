@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(77, 77, 77, 1);
+    font-family: "Roboto";
+    font-weight: bold;
+  }
+  
+  .banner {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgba(172, 171, 151, 1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+   
+  .icon-placeholder {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+  }
+  
+  .header {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 36px;
+  }
+  
+  
