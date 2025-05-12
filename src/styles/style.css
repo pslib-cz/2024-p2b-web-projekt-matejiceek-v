@@ -75,3 +75,84 @@ p {
   color: white;
 }
 
+.gallery-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.photo {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.arrow {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #ccc;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.arrow:hover {
+  color: white;
+}
+.left-arrow {
+  left: -25px;
+}
+.right-arrow {
+  right: -25px;
+}
+
+.caption {
+  align-items: center;
+  justify-self: center;
+  padding: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input, select {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(200, 200, 200, 1);
+  font-size: 14px;
+  color: #000;
+  width: 75%;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 30px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(138, 137, 121, 1);
+  color: white;
+  font-weight: bold;
+  font-family: "Roboto";
+  cursor: pointer;
+  width: 25%;
+}
