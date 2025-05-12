@@ -76,6 +76,11 @@ p {
   font-size: 16px;
 }
 
+.block img { 
+  display: block;
+  display: none;
+}
+
 .gallery-container {
   position: relative;
   width: 300px;
@@ -167,7 +172,7 @@ button {
     box-sizing: border-box;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
   
   .block {
@@ -176,7 +181,7 @@ button {
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    justify-content: space-evenly;
   }
 
   .block p {
@@ -186,6 +191,18 @@ button {
   
   .block h2 {
     font-size: clamp(25px, 2vw, 32px);
+  }
+
+  .block img {
+    display: flex;
+    max-width: 100%;
+    height: clamp(341,33px, 30  vw, 331,014px);;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    margin-top: auto;
+    border-radius: 50px;
   }
 
 }
