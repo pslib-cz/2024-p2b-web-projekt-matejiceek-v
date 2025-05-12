@@ -1,10 +1,10 @@
 const images = [
-    { src: "%BASE_URL%dragster_scooter.png", caption: "ItalJet Dragster"},
-    { src: "%BASE_URL%orange_scooter.png", caption: "Oranžový skútr"},
-    { src: "%BASE_URL%blue_scooter.jpg", caption: "Modrý skútr"},
-    { src: "%BASE_URL%purple_scooter.png", caption: "Fialový skútr"},
-    { src: "%BASE_URL%red_scooter.png", caption: "Červený skútr"},
-    { src: "%BASE_URL%yellow_scooter.png", caption: "Žlutý skútr"},
+    { src: "/public/dragster_scooter.png", caption: "ItalJet Dragster"},
+    { src: "/public/orange_scooter.png", caption: "Oranžový skútr"},
+    { src: "/public/blue_scooter.jpg", caption: "Modrý skútr"},
+    { src: "/public/purple_scooter.png", caption: "Fialový skútr"},
+    { src: "/public/red_scooter.png", caption: "Červený skútr"},
+    { src: "/public/yellow_scooter.png", caption: "Žlutý skútr"},
   ];
 
   let currentIndex = 0;
