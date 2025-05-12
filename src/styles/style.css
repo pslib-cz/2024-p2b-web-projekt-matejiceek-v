@@ -73,6 +73,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   color: white;
+  font-size: 16px;
 }
 
 .gallery-container {
@@ -155,4 +156,36 @@ button {
   font-family: "Roboto";
   cursor: pointer;
   width: 25%;
+}
+
+@media screen and (min-width: 1024px) {
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    height: 100%; 
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .block {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .block p {
+    font-size: clamp(17px, 1.33vw, 24px);
+    
+  }
+  
+  .block h2 {
+    font-size: clamp(25px, 2vw, 32px);
+  }
+
 }
