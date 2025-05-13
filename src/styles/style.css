@@ -181,7 +181,6 @@ button {
     margin-bottom: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
   }
 
   .block p {
