@@ -184,12 +184,12 @@ button {
   }
 
   .block p {
-    font-size: clamp(17px, 1.33vw, 24px);
+    font-size: clamp(16px, 1.5vw, 24px);
     
   }
   
   .block h2 {
-    font-size: clamp(25px, 2vw, 32px);
+    font-size: clamp(24px, 2vw, 32px);
   }
 
   .block img {
