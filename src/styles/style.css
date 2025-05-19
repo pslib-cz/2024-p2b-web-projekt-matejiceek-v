@@ -77,50 +77,7 @@ p {
 }
 
 .block img { 
-  display: block;
   display: none;
-}
-
-.gallery-container {
-  position: relative;
-  width: 300px;
-  margin: 0 auto;
-}
-.photo {
-  width: 100%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
-.arrow {
-  position: absolute;
-  align-items: center;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  color: #ccc;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.arrow:hover {
-  color: white;
-}
-.left-arrow {
-  left: -50px;
-}
-.right-arrow {
-  right: -50px;
-}
-
-.caption {
-  align-items: center;
-  justify-self: center;
-  padding: 0;
-  color: rgba(255, 255, 255, 1);
 }
 
 .form-container {
@@ -204,4 +161,54 @@ button {
     border-radius: 50px;
   }
 
+}
+
+
+.gallery-section {
+  color: white;
+  text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  --swiper-theme-color: rgba(172, 171, 151, 1);
+}
+
+.gallery-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 90vw;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: max-width 0.3s ease;
+
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: 20px !important;
+
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 20px !important;
+  align-self: flex-end;
 }
