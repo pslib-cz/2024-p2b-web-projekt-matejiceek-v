@@ -1,0 +1,1 @@
+import r from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";let e=null;function t(){const i=window.matchMedia("(max-width: 1023px)").matches;i&&!e?e=new r(".mySwiper",{loop:!0,slidesPerView:1}):!i&&e&&(e.destroy(!0,!0),e=null)}t();window.addEventListener("resize",t);
