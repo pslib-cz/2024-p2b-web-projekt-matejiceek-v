@@ -6,6 +6,13 @@ html, body {
   font-weight: bold;
 }
 
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
 .banner {
   width: 100%;
   padding: 10px 15px;
@@ -80,46 +87,6 @@ p {
   display: none;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-input, select {
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  background-color: rgba(200, 200, 200, 1);
-  font-size: 14px;
-  color: #000;
-  width: 75%;
-  font-family: "Roboto";
-  font-weight: bold;
-}
-
-select {
-  appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 30px;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  background-color: rgba(138, 137, 121, 1);
-  color: white;
-  font-weight: bold;
-  font-family: "Roboto";
-  cursor: pointer;
-  width: 25%;
-}
-
 .gallery-section {
   color: white;
   text-align: center;
@@ -157,6 +124,72 @@ button {
   display: block;
 }
 
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+
+.adress, .hours, .contact{
+  background-color: rgba(172, 171, 151, 1);
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input, select {
+  max-width: none;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(200, 200, 200, 1);
+  font-size: 16px;
+  color: #000;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 30px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(138, 137, 121, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto";
+  cursor: pointer;
+  width: 25%;
+}
+
+
+
 @media (min-width: 750px) and (max-width: 1023px) {
   .swiper {
     display: grid !important;
@@ -188,6 +221,11 @@ button {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
+
+  .contact-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -260,6 +298,38 @@ button {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .adress p, .hours p, .contact p{
+
+    color: white;
+    font-size: clamp(16px, 1.5vw, 24px);
+    text-align: left;
+    }
+
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 20px 40px;
+    justify-items: center;
+  }
+
+  input, select, button {
+    font-size: clamp(16px, 1.5vw, 24px);
+  }
+
+  .form-container button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: 300px;
   }
 
 }
